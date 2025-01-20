@@ -1,26 +1,27 @@
 import { PageSubTitle, PageTemplate } from "../components/page-template";
 import PreviewCodeCard from "../components/previewcodecard";
-
 import { Steppers } from "../../ui/steppers";
-import { Alertdemo } from "./alertDemo.tsx";
+import  MultipleSelectorDemo  from "./SelectorDemo";
+
 
 const page = () => {
   return (
     <div>
-      <PageTemplate title="Animated SVG Chart" className="mt-5">
-        <PreviewCodeCard path="/animatedChartDemo.txt">
-          <Alertdemo />
+      <PageTemplate title="Card Spotlight" className="mt-5">
+        <PreviewCodeCard path="/selectorPreview.txt" >
+          <MultipleSelectorDemo/>
         </PreviewCodeCard>
+
         <PageSubTitle>Installation</PageSubTitle>
         <p className="text-gray-400">
-          Edit tailwind.config.ts to add background grid
+          Add lib/utils.ts file
         </p>
         <Steppers
           className=""
-          installScript={["npm i framer-motion lucide-react npx shadcn@latest add alert"]}
+          installScript={["npx shadcn@latest add command badge"]}
           steps={[{ title: "Create feedback component & paste the code" }]}
           withInstall
-          codePath="/utils.txt"
+          codePath="/selector1.txt"
         />
       </PageTemplate>
     </div>

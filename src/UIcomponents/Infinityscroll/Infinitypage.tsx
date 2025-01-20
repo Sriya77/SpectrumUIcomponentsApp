@@ -2,28 +2,22 @@ import { PageSubTitle, PageTemplate } from "../components/page-template";
 import PreviewCodeCard from "../components/previewcodecard";
 
 import { Steppers } from "../../ui/steppers";
-import AnimatedTestimonialsDemo from "./animateddemo";
+import InfiniteScrollDemo from './infinitydemo'
 
 const Page = () => {
   return (
     <div>
       <PageTemplate title="Animated Testimonials" className="mt-5">
-        <PreviewCodeCard path="/animatedTestimonails.txt">
-          <AnimatedTestimonialsDemo />
+        <PreviewCodeCard path="/infinitypreview.txt">
+          <InfiniteScrollDemo />
         </PreviewCodeCard>
 
         <PageSubTitle>Installation</PageSubTitle>
-        <p>
-          Create a new file called <code>ImagePreview.tsx</code> in the
-          {" components"}
-        </p>
-
         <Steppers
           className=""
-          installScript={["npm i lucide-react framer-motion"]}
           steps={[{ title: "Create feedback component & paste the code" },]}
           withInstall
-          codePath="/testimonials.txt"
+          codePath="/infinity1.txt"
         />
 
         <div>

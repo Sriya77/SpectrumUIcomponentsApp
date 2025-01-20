@@ -2,28 +2,24 @@ import { PageSubTitle, PageTemplate } from "../components/page-template";
 import PreviewCodeCard from "../components/previewcodecard";
 
 import { Steppers } from "../../ui/steppers";
-import AnimatedTestimonialsDemo from "./animateddemo";
+import CardHoverEffectDemo from './CardsDemo.tsx'
 
 const Page = () => {
   return (
     <div>
       <PageTemplate title="Animated Testimonials" className="mt-5">
-        <PreviewCodeCard path="/animatedTestimonails.txt">
-          <AnimatedTestimonialsDemo />
+        <PreviewCodeCard path="/HoverPreview.txt">
+          <CardHoverEffectDemo />
         </PreviewCodeCard>
 
         <PageSubTitle>Installation</PageSubTitle>
-        <p>
-          Create a new file called <code>ImagePreview.tsx</code> in the
-          {" components"}
-        </p>
 
         <Steppers
           className=""
-          installScript={["npm i lucide-react framer-motion"]}
+          installScript={["npm i framer-motion clsx tailwind-merge"]}
           steps={[{ title: "Create feedback component & paste the code" },]}
           withInstall
-          codePath="/testimonials.txt"
+          codePath="/Hovercopy.txt"
         />
 
         <div>

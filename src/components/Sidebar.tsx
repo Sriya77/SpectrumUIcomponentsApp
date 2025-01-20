@@ -4,7 +4,7 @@ import { ChevronDown, ChevronRight } from 'lucide-react';
 
 const menuItems = {
   'Getting Started': ['Introduction', 'Installation', 'Tailwind'],
-  'Components': ['AnimatedChart', 'Alert', 'AnimatedTestimonials', 'Buttons']
+  'Components': ['AnimatedChart', 'Alert', 'AnimatedTestimonials','BackgroundBoxes', 'Buttons', 'Card-hover-effect','ImagePreview',  'InfinityScroll','MultipleSelector', 'Spotlight',]
 };
 
 const Sidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {

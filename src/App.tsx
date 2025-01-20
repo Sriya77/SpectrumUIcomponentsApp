@@ -10,6 +10,14 @@ import AnimatedChart from './UIcomponents/AnimatedChart/animatedPage';
 import Alert from './UIcomponents/Alerts/alertpage';
 import ButtonPage from './UIcomponents/Button/buttonPage';
 import AnimatedTestimonials from './UIcomponents/AnimatedTestimonials/testimonialspage'
+import BackgroundBoxes from './UIcomponents/BackgroundBoxes/BoxPage'
+import Cardhovereffect from './UIcomponents/Cards Hover Effect/CardsPage'
+import Page from './UIcomponents/card-spotlight/spotlightPage'
+import InfinityScroll from './UIcomponents/Infinityscroll/Infinitypage'
+import ImagePreview from './UIcomponents/ImagePreview/imagepage'
+import Feedback from './UIcomponents/Feedback/feedbackPage'
+import MultipleSelector from './UIcomponents/MultipleSelector/SelectorPage'
+
 
 function App() {
   return (
@@ -28,6 +36,16 @@ function App() {
               <Route path="Alert" element={<Alert />} />
               <Route path="buttons" element={<ButtonPage />} />
               <Route path="AnimatedTestimonials" element={<AnimatedTestimonials />} />
+              <Route path="BackgroundBoxes" element={<BackgroundBoxes />} />
+              <Route path="Card-hover-effect" element={<Cardhovereffect />} />
+              <Route path="Spotlight" element={<Page />} />
+              <Route path="InfinityScroll" element={<InfinityScroll />} />
+              <Route path="ImagePreview" element={<ImagePreview />} />
+              <Route path="Feedback" element={<Feedback />} />
+              <Route path="MultipleSelector" element={<MultipleSelector />} />
+
+
+
             </Route>
           </Routes>
         </div>

@@ -19,7 +19,7 @@ const page = () => {
         </p>
         <Steppers
           className=""
-          installScript="npm i framer-motion mini-svg-data-uri"
+          installScript={["npm i framer-motion mini-svg-data-uri"]}
           steps={[{ title: "Create feedback component & paste the code" }]}
           withInstall
           codePath="/sample.txt"

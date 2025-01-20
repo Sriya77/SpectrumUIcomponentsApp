@@ -9,8 +9,7 @@ const page = () => {
         <Steppers
           withInstall
           codePath="/buttons.txt"
-          installScript="npx shadcn@latest add button"
-         
+          installScript={["npx shadcn@latest add button"]}
           withEnd
         />
         <PageSubTitle>Usage</PageSubTitle>
@@ -21,5 +20,7 @@ const page = () => {
     </div>
   );
 };
+
+
 
 export default page;
